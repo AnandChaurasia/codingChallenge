@@ -1,0 +1,14 @@
+{
+  "local": [
+    {
+      "deviceName": "Nexus 6",
+      "platformName": "Android",
+      "udid": "emulator-5554",
+      "buildVersion": "app-debug.apk",
+      "app": "app-debug.apk",
+      "appPackage": "id.ihwan.jetpackpro.debug",
+      "appActivity": "id.ihwan.jetpackpro.home.HomeActivity",
+      "noReset": true
+    }
+  ]
+}
