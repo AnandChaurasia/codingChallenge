@@ -84,4 +84,5 @@ Integration with project with Proxy
 ##7. Findings
 Started building automation for project https://github.com/haroldadmin/MovieDB 
 but look like some problem with API because app is always in loading state 
+
 <img src="img\MovieDB.jpg">
