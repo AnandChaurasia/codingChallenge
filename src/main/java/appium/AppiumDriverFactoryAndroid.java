@@ -33,6 +33,7 @@ public class AppiumDriverFactoryAndroid {
                 androidCaps.setCapability("appPackage", reader.getAppPackage());
                 androidCaps.setCapability("appActivity", reader.getAppActivity());
                 androidCaps.setCapability("bundleID", reader.getBundleID());
+                androidCaps.setCapability("networkSpeed", reader.getNetworkSpeed());
                 androidCaps.setCapability("noReset",true);
                 androidCaps.setCapability("fullReset", false);
                 try {

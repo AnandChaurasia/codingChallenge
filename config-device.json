@@ -8,7 +8,8 @@
       "app": "app-debug.apk",
       "appPackage": "id.ihwan.jetpackpro.debug",
       "appActivity": "id.ihwan.jetpackpro.home.HomeActivity",
-      "noReset": true
+      "noReset": true,
+      "networkSpeed": "full"
     }
   ]
 }

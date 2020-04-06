@@ -19,6 +19,7 @@ public class JsonReader {
     private String appWaitActivity;
     private String bundleID;
     private String appActivity;
+    private String networkSpeed;
 
 
     private static String buildVersion;
@@ -91,6 +92,11 @@ public class JsonReader {
     public static String getBuildVersion() {
         return buildVersion;
     }
+
+    public String getNetworkSpeed() {
+        return networkSpeed;
+    }
+
 
 }
 
