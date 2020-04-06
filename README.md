@@ -37,3 +37,51 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 - use one of the tracing tools to trace the app network traffic
 - simulate network velocity
 
+#Solution
+## 1. Project Setup
+- Java 12
+- Gherkin/Cucumber
+- Appium
+- Selenium 
+- Build Tool : Maven 
+
+##2. Software needs to be Install
+- Java
+- Android sdk
+- Appium
+- IDE IntelliJ
+
+##3. Client App used for code challenge
+https://github.com/IhwanID/belajar-android-jetpack-pro
+
+##4. High level Scenario designed for 
+- Adding Movies and TV-Shows in favorite list (For details refer feature file)
+- Verify content fields of Movies and TV-Shows detail page (For details refer feature file)
+
+##5. Reporting 
+Result will be generated in Result folder
+- Sample of Over all summary 
+<img src="img\SummaryReport.jpg">
+
+- Sample report for test cases level
+ <img src="img\TestLevelReport.jpg">
+
+##6. Network Test
+- Fiddler Fiddler tracing tools to trace the app network traffic with "full network upload and download speeds"
+<img src="img\Network_traffic_with_Full_network.jpg">
+
+- Fiddler Fiddler tracing tools to trace the app network traffic with "GSM network upload and download speeds"
+<img src="img\Network_traffic_with_GSM_network.jpg">
+
+##6. Open items 
+Integration with project with Proxy
+- tried with okHTTP with fiddler proxy need more understanding and time
+** reference : https://developers.perfectomobile.com/pages/viewpage.action?pageId=41026106
+
+- tried with mitmproxy blocked at level https://github.com/appium/mitmproxy-java/issues/4 
+** blocked while installing mitmproxy with PIP command 
+
+##7. Findings
+Started building automation for project https://github.com/haroldadmin/MovieDB 
+but look like some problem with API because app is always in loading state 
+<img src="img\MovieDB.jpg">

@@ -16,7 +16,6 @@ public class JsonReader {
     private String appPackage;
     private String app;
     private String deviceName;
-    private String appWaitActivity;
     private String bundleID;
     private String appActivity;
     private String networkSpeed;
@@ -52,10 +51,10 @@ public class JsonReader {
             this.platformName = (String) android.get("platformName");
             this.app = (String) android.get("app");
             this.udid = (String) android.get("udid");
-            this.appWaitActivity = (String) android.get("appWaitActivity");
             this.appPackage = (String) android.get("appPackage");
             this.appActivity = (String) android.get("appActivity");
             this.bundleID = (String) android.get("bundleID");
+            this.networkSpeed = (String) android.get("networkSpeed");
             buildVersion = (String) android.get("buildVersion");
         }
     }

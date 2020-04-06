@@ -80,10 +80,10 @@ public class CommonStepObjects {
     }
 
 
-    public static void scrollUpAndroidAndClick(WebElement element, String movieName) throws Exception {
+    public static void scrollUpAndroidAndClick(By locator, String movieName) throws Exception {
         int maxCounter = 25;
         int Cntr = 0;
-        while (!isElementFoundById(element, movieName) && Cntr < maxCounter) {
+        while (!isElementFoundById(locator, movieName) && Cntr < maxCounter) {
             TouchAction touchAction = new TouchAction(driver);
             Dimension size = driver.manage().window().getSize();
             int starty = (int) (size.height * 0.50);
@@ -95,9 +95,9 @@ public class CommonStepObjects {
             Cntr++;
         }
         if (Cntr >= maxCounter) {
-            throw new Exception("Element not found" + element);
+            throw new Exception("Element not found" + locator);
         } else {
-            element.click();
+            driver.findElement(locator).click();
         }
 
     }
@@ -105,12 +105,19 @@ public class CommonStepObjects {
     public static boolean isElementFoundById(WebElement element, String text) {
         try {
             return element.getText().equalsIgnoreCase(text);
-
         } catch (Exception e) {
             return false;
         }
-
     }
+
+    public static boolean isElementFoundById(By locator, String text) {
+        try {
+            return  driver.findElement(locator).getText().equalsIgnoreCase(text);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 
     public static String getTextOfToastMessage() {
         WebElement toastView = driver.findElement(By.xpath("//android.widget.Toast"));

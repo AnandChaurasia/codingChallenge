@@ -194,7 +194,7 @@ public class Stepdefs extends CommonStepObjects {
     @When("^User selects poster \"([^\"]*)\"$")
     public void userSelectsPoster(String arg0)  {
         try {
-            CommonStepObjects.scrollUpAndroidAndClick(MoviesCataloguePage.POSTER_TITLE.getElement(), arg0);
+            CommonStepObjects.scrollUpAndroidAndClick(MoviesCataloguePage.POSTER_TITLE.getLocator(), arg0);
             test.log(LogStatus.PASS, "Movie from catalog is selected ", test.addScreenCapture(Report.CaptureScreen(driver)));
         } catch (Exception e) {
             catchException(e, test);
