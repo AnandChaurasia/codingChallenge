@@ -61,17 +61,17 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 ##5. Reporting 
 Result will be generated in Result folder
 - Sample of Over all summary 
-<img src="img\SummaryReport.jpg">
+<img src="img/SummaryReport.png">
 
 - Sample report for test cases level
- <img src="img\TestLevelReport.jpg">
+ <img src="img/TestLevelReport.png">
 
 ##6. Network Test
 - Fiddler Fiddler tracing tools to trace the app network traffic with "full network upload and download speeds"
-<img src="img\Network_traffic_with_Full_network.jpg">
+<img src="img/Network_traffic_with_Full_network.png">
 
 - Fiddler Fiddler tracing tools to trace the app network traffic with "GSM network upload and download speeds"
-<img src="img\Network_traffic_with_GSM_network.jpg">
+<img src="img/Network_traffic_with_GSM_network.png">
 
 ##6. Open items 
 Integration with project with Proxy
@@ -84,4 +84,4 @@ Integration with project with Proxy
 ##7. Findings
 Started building automation for project https://github.com/haroldadmin/MovieDB 
 but look like some problem with API because app is always in loading state 
-<img src="img\MovieDB.jpg">
+<img src="img/MovieDB.png">
