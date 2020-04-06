@@ -39,7 +39,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 
 # Solution
 
-## 1. Project Setup
+##1. Project Setup
 - Java 12
 - Gherkin/Cucumber
 - Appium
