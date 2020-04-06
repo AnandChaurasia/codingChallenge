@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.IOException;
 import java.net.ServerSocket;
 
+import enums.AppiumServerDetails.Server;
+
 public class AppiumServer {
     private AppiumDriverLocalService service;
     private AppiumServiceBuilder builder;
@@ -20,8 +22,8 @@ public class AppiumServer {
 
         //Build the Appium service
         builder = new AppiumServiceBuilder();
-        builder.withIPAddress("127.0.0.1");
-        builder.usingPort(4723);
+        builder.withIPAddress(Server.IP.getLabel());
+        builder.usingPort(Integer.parseInt(Server.PORT.getLabel()));
         builder.withCapabilities(cap);
         builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
         builder.withArgument(GeneralServerFlag.LOG_LEVEL,"error");
@@ -50,4 +52,6 @@ public class AppiumServer {
         }
         return isServerRunning;
     }
+
+
 }

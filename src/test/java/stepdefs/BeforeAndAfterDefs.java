@@ -6,7 +6,8 @@ import com.relevantcodes.extentreports.LogStatus;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-//import reportingUtil.Report;
+import reportingUtil.Report;
+
 
 import java.util.Map;
 
@@ -19,22 +20,21 @@ public class BeforeAndAfterDefs extends CommonStepObjects {
         Map<String, Object> driverDetails;
 
         try {
-             if (!CommonStepObjects.FeatureFileName.equals(scenario.getId().split(";")[0])) {
+            /* if (!CommonStepObjects.FeatureFileName.equals(scenario.getId().split(";")[0])) {
                  CommonStepObjects.StartFlag = true;
-             }
+             }*/
             if (CommonStepObjects.StartFlag) {
                 CommonStepObjects.StartFlag = false;
                 CommonStepObjects.FeatureFileName = scenario.getId().split(";")[0];
-                if(!appiumServer.checkIfServerIsRunning(port)) {
+                if (!appiumServer.checkIfServerIsRunning(port)) {
                     appiumServer.startServer();
-                    //appiumServer.stopServer();
                 } else {
                     System.out.println("Appium Server already running on Port - " + port);
                 }
 
-           driver = AppiumDriverFactoryAndroid.getInstance().getDriver();
+                driver = AppiumDriverFactoryAndroid.getInstance().getDriver();
                 driverDetails = CommonStepObjects.driver.getSessionDetails();
-              //  extent = Report.Instance(scenario.getId().split(";")[0], driverDetails);
+                extent = Report.Instance(scenario.getId().split(";")[0], driverDetails);
                 CommonStepObjects.CurrentScenario = scenario.getId().split(";")[1];
             }
             if (!scenario.getId().split(";")[1].equalsIgnoreCase("stop")) {
@@ -53,7 +53,6 @@ public class BeforeAndAfterDefs extends CommonStepObjects {
 
     }
 
-
     @After
     public void afterTest(Scenario scenario) {
         if (scenario.isFailed()) {
@@ -61,8 +60,6 @@ public class BeforeAndAfterDefs extends CommonStepObjects {
         }
         CommonStepObjects.extent.endTest(CommonStepObjects.test);
         CommonStepObjects.extent.flush();
-
-
 
     }
 }

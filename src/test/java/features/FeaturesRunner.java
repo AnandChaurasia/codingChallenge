@@ -12,7 +12,6 @@ import stepdefs.CommonStepObjects;
 @CucumberOptions(monochrome = true,
 
         features = "src/test/java/features",
-        // format = {"pretty","json:target/cucumber-html-reports/cucumber.json"},
         glue = {"stepdefs"},
         tags = {"@Ready"})
 
