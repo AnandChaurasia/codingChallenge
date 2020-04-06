@@ -39,7 +39,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 
 # Solution
 
-##1. Project Setup
+## 1. Project Setup
 
 - Java 12
 - Gherkin/Cucumber
@@ -47,23 +47,23 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 - Selenium 
 - Build Tool : Maven 
 
-##2. Software needs to be Install
+## 2. Software needs to be Install
 
 - Java
 - Android sdk
 - Appium
 - IDE IntelliJ
 
-##3. Client App used for code challenge
+## 3. Client App used for code challenge
 
 https://github.com/IhwanID/belajar-android-jetpack-pro
 
-##4. High level Scenario designed for 
+## 4. High level Scenario designed for 
 
 - Adding Movies and TV-Shows in favorite list (For details refer feature file)
 - Verify content fields of Movies and TV-Shows detail page (For details refer feature file)
 
-##5. Reporting 
+## 5. Reporting 
 
 Result will be generated in Result folder
 - Sample of Over all summary 
@@ -72,7 +72,7 @@ Result will be generated in Result folder
 - Sample report for test cases level
  <img src="img/TestLevelReport.png">
 
-##6. Network Test
+## 6. Network Test
 
 - Fiddler Fiddler tracing tools to trace the app network traffic with "full network upload and download speeds"
 <img src="img/Network_traffic_with_Full_network.png">
@@ -80,7 +80,7 @@ Result will be generated in Result folder
 - Fiddler Fiddler tracing tools to trace the app network traffic with "GSM network upload and download speeds"
 <img src="img/Network_traffic_with_GSM_network.png">
 
-##6. Open items 
+## 6. Open items 
 
 Integration with project with Proxy
 - tried with okHTTP with fiddler proxy need more understanding and time
@@ -89,7 +89,7 @@ Integration with project with Proxy
 - tried with mitmproxy blocked at level https://github.com/appium/mitmproxy-java/issues/4 
 ** blocked while installing mitmproxy with PIP command 
 
-##7. Findings
+## 7. Findings
 
 Started building automation for project https://github.com/haroldadmin/MovieDB but look like some problem with API because app is always in loading state 
 <img src="img/MovieDB.jpg">
