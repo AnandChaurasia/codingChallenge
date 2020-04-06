@@ -37,7 +37,8 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 - use one of the tracing tools to trace the app network traffic
 - simulate network velocity
 
-#Solution
+# Solution
+
 ## 1. Project Setup
 - Java 12
 - Gherkin/Cucumber
@@ -82,7 +83,5 @@ Integration with project with Proxy
 ** blocked while installing mitmproxy with PIP command 
 
 ##7. Findings
-Started building automation for project https://github.com/haroldadmin/MovieDB 
-but look like some problem with API because app is always in loading state 
-
+Started building automation for project https://github.com/haroldadmin/MovieDB but look like some problem with API because app is always in loading state 
 <img src="img\MovieDB.jpg">
