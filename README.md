@@ -81,14 +81,13 @@ Result will be generated in Result folder of project location
 - Fiddler Fiddler tracing tools to trace the app network traffic with "GSM network upload and download speeds"
 <img src="img/Network_traffic_with_GSM_network.png">
 
-## 6. Open items 
+## 6. Items open for discussion
 
 Integration of project with Proxy
-- tried with okHTTP with fiddler proxy need more understanding and time
-** reference : https://developers.perfectomobile.com/pages/viewpage.action?pageId=41026106
+- can be done via okHTTP with fiddler proxy but need more understanding on requirement.
+- reference : https://developers.perfectomobile.com/pages/viewpage.action?pageId=41026106
 
-- tried with mitmproxy blocked at level https://github.com/appium/mitmproxy-java/issues/4 
-** blocked while installing mitmproxy with PIP command 
+- Tried with mitmproxy blocked at level https://github.com/appium/mitmproxy-java/issues/4 
 
 ## 7. Findings
 
