@@ -79,7 +79,10 @@ Result will be generated in Result folder of project location
 <img src="img/Network_traffic_with_Full_network.png">
 
 - Fiddler Fiddler tracing tools to trace the app network traffic with "GSM network upload and download speeds"
-<img src="img/Network_traffic_with_GSM_network.png">
+<img src="img/Network_traffic_with_Poor_network.png">
+
+- Transaction level performance difference with network speed
+<img src="img/Transation_Performance_Difference.png">
 
 ## 6. Items open for discussion
 
