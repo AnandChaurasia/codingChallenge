@@ -41,7 +41,7 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 
 ## 1. Project Setup
 
-- Java 12
+- Java 8+
 - Gherkin/Cucumber
 - Appium
 - Selenium 
@@ -52,24 +52,25 @@ https://github.com/IhwanID/belajar-android-jetpack-pro
 - Java
 - Android sdk
 - Appium
+- Fiddler Proxy
 - IDE IntelliJ
 
 ## 3. Client App used for code challenge
 
 https://github.com/IhwanID/belajar-android-jetpack-pro
 
-## 4. High level Scenario designed for 
+## 4. Scenario designed 
 
 - Adding Movies and TV-Shows in favorite list (For details refer feature file)
 - Verify content fields of Movies and TV-Shows detail page (For details refer feature file)
 
 ## 5. Reporting 
 
-Result will be generated in Result folder
-- Sample of Over all summary 
+Result will be generated in Result folder of project location
+- Summary report sample
 <img src="img/SummaryReport.png">
 
-- Sample report for test cases level
+- Sample report at test cases level
  <img src="img/TestLevelReport.png">
 
 ## 6. Network Test
@@ -82,7 +83,7 @@ Result will be generated in Result folder
 
 ## 6. Open items 
 
-Integration with project with Proxy
+Integration of project with Proxy
 - tried with okHTTP with fiddler proxy need more understanding and time
 ** reference : https://developers.perfectomobile.com/pages/viewpage.action?pageId=41026106
 
